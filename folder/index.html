@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Food Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Delicious Foods</h1>
-</header>
-<main>
-    <section class="food-section chicken">
-        <div class="section-title">Chicken</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section class="food-section beef">
-        <div class="section-title">Beef</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section class="food-section sushi">
-        <div class="section-title">Sushi</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-</main>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Food, LLC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#chicken">Chicken</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#beef">Beef</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sushi">Sushi</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page Heading -->
+<div class="container">
+    <h1 class="text-center">Our Menu</h1>
+</div>
+
+<!-- Tall Section for Scrolling -->
+<div class="container-fluid" style="height: 1000px; background-color: #f8f9fa;">
+    <div class="row">
+        <div class="col-xs-12">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Chicken Section -->
+<div id="chicken" class="container-fluid">
+    <h3 class="text-center">Chicken</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<!-- Beef Section -->
+<div id="beef" class="container-fluid">
+    <h3 class="text-center">Beef</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<!-- Sushi Section -->
+<div id="sushi" class="container-fluid">
+    <h3 class="text-center">Sushi</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
