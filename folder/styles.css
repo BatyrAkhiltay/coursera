@@ -1,47 +1,96 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
-    margin-bottom: 20px;
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-.container-fluid {
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
     padding: 20px;
-}
-
-.container-fluid h3 {
-    margin-top: 20px;
-}
-
-#chicken, #beef, #sushi {
     background-color: #f1f1f1;
     margin-bottom: 20px;
 }
 
-#chicken p, #beef p, #sushi p {
-    padding: 10px;
-    background-color: #e9ecef;
+.section h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Mobile specific styles */
-@media (max-width: 767px) {
-    nav .navbar-nav {
-        text-align: center;
-    }
-
-    .container-fluid h3 {
-        font-size: 1.5rem;
-    }
-
-    #chicken, #beef, #sushi {
-        background-color: #fff;
-        margin-bottom: 20px;
-    }
+/* Row Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* Optional: Add smooth scrolling effect */
-html {
-    scroll-behavior: smooth;
+.col {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+/* Centered Text */
+.text-center {
+    text-align: center;
+}
+
+/* Image Styles */
+.image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        flex: 1 1 100%;
+    }
 }

@@ -4,68 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="#">Food, LLC</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#chicken">Chicken</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#beef">Beef</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#sushi">Sushi</a>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar">
+    <div class="navbar-brand">Food, LLC</div>
+    <ul class="navbar-nav">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+    </ul>
 </nav>
 
 <!-- Page Heading -->
 <div class="container">
     <h1 class="text-center">Our Menu</h1>
+    <p class="text-center">Discover our delicious options below!</p>
 </div>
 
-<!-- Tall Section for Scrolling -->
-<div class="container-fluid" style="height: 1000px; background-color: #f8f9fa;">
+<!-- Chicken Section -->
+<div id="chicken" class="section">
+    <h3 class="text-center">Chicken</h3>
     <div class="row">
-        <div class="col-xs-12">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a description of our chicken dishes.</p>
+        </div>
+        <div class="col">
+            <img src="https://via.placeholder.com/400x200?text=Chicken+Dishes" alt="Chicken Dishes" class="image">
         </div>
     </div>
 </div>
 
-<!-- Chicken Section -->
-<div id="chicken" class="container-fluid">
-    <h3 class="text-center">Chicken</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-
 <!-- Beef Section -->
-<div id="beef" class="container-fluid">
+<div id="beef" class="section">
     <h3 class="text-center">Beef</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Try our tender and flavorful beef dishes.</p>
+        </div>
+        <div class="col">
+            <img src="https://via.placeholder.com/400x200?text=Beef+Dishes" alt="Beef Dishes" class="image">
+        </div>
+    </div>
 </div>
 
 <!-- Sushi Section -->
-<div id="sushi" class="container-fluid">
+<div id="sushi" class="section">
     <h3 class="text-center">Sushi</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explore our fresh sushi options.</p>
+        </div>
+        <div class="col">
+            <img src="https://via.placeholder.com/400x200?text=Sushi+Dishes" alt="Sushi Dishes" class="image">
+        </div>
+    </div>
 </div>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
